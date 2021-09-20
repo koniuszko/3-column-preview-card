@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 375px;
+    min-height: 750px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card {
+    min-height: 250px;
+    padding: 40px;
+    text-align: justify;
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.blue {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.green {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.sedan {
+    background-image: url(./images/icon-sedans.svg);
+
+}
+
+.suv {
+    background-image: url(./images/icon-suvs.svg);
+
+}
+
+.luxury {
+    background-image: url(./images/icon-luxury.svg);
+}
+
+.orange_btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.blue_btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.green_btn {
+    color: hsl(179, 100%, 13%);
+}
+
+h1 {
+    margin-top: 10px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    margin-top: 30px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    margin-top: 40px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+@media(min-width:1440px) {
+    .content {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1200px;
+        height: 300px;
+        display: flex;
+    }
+
+    .card {
+        padding: 60px;
+    }
+
+
+    .img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .orange_btn {
+        color: hsl(31, 77%, 52%);
+    }
+
+    .blue_btn {
+        color: hsl(184, 100%, 22%);
+    }
+
+    .green_btn {
+        color: hsl(179, 100%, 13%);
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 48px;
+        letter-spacing: 2.4px;
+    }
+
+    p {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    button {
+        margin-top: 180px;
+        height: 60px;
+        width: 200px;
+        border-radius: 30px;
+        background-color: hsl(0, 0%, 95%);
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .orange_btn:hover {
+        background-color: hsl(31, 77%, 52%);
+        color: hsl(0, 0%, 95%);
+        border: 2px solid;
+    }
+
+    .blue_btn:hover {
+        background-color: hsl(184, 100%, 22%);
+        color: hsl(0, 0%, 95%);
+        border: 2px solid;
+    }
+
+    .green_btn:hover {
+        background-color: hsl(179, 100%, 13%);
+        color: hsl(0, 0%, 95%);
+        border: 2px solid;
+    }
+
+}
